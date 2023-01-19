@@ -51,5 +51,5 @@ app.post("/login",async(req,resp)=>{
 
 
 app.listen(port, () => {
-    console.log(`example app listining at http:localhost:${port}`);
+    console.log(`Server start at port no ${port}`);
 });
