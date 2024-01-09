@@ -4,7 +4,7 @@ require ("dotenv").config();
 const cors = require("cors");
 const User = require("./db/User");
 const app = express();
-const port = process.env.PORT|| 5000
+const port = process.env.PORT || 5000
 
 
 const Jwt =require('jsonwebtoken');
@@ -51,5 +51,5 @@ app.post("/login",async(req,resp)=>{
 
 
 app.listen(port, () => {
-    console.log(`Server start at port no ${port}`);
+    console.log(`example app listining at http:localhost:${port}`);
 });
